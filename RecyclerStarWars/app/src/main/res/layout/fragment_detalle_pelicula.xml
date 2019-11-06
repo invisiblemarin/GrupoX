@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FragmentDetallePelicula"
+    android:background="#000000">
+
+    <ImageView
+        android:id="@+id/ImageView_Poster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <TextView
+        android:id="@+id/TextView_Titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/TextView_Director"
+        />
+
+    <TextView
+        android:id="@+id/TextView_Director"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/TextView_Fecha"
+        />
+
+    <TextView
+        android:id="@+id/TextView_Fecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/ScrollView_Sinopsis"
+        />
+<ScrollView
+    android:id="@+id/ScrollView_Sinopsis"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_alignParentBottom="true">
+
+
+    <TextView
+        android:id="@+id/TextView_Sinopsis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+        />
+</ScrollView>
+
+
+
+</RelativeLayout>
